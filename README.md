@@ -1,2 +1,37 @@
 # CleanArchitecture-SwiftUI
-SwiftUI sample app using Clean Architecture. Examples of working with SwiftData persistence, networking, dependency injection, unit testing, and SOLID Principals.
+This is Recipe list application. I have used a public API for network calls and fetched recipe data.
+
+## Architecture concepts used here
+
+- Clean Architecture.
+- Dependancy Injection.
+- SOLID Principles.
+- Navigation using Coordinator.
+- Network call using async/await.
+- Code coverage with unit testing : ~87%
+
+## Includes
+
+- Unit tests using XCTest.
+
+## Requirements
+
+- Xcode 16.2 Swift 5.5+
+
+## Dependencies
+
+- None.
+
+## Supports
+
+- iPhone Devices. Portrait Mode.
+
+## How to use app
+
+- Clone respository.
+
+## Future Modification
+
+- Add Analytics.
+- UITest cases using XCUITest.
+- Snapshot Testing.
