@@ -221,17 +221,9 @@ final class RecipeAppUITests: XCTestCase {
     func testAppLaunch() throws {
         // Verify app launches successfully
         XCTAssertTrue(app.state == .runningForeground, "App should be running in foreground")
-        
-        // Verify main UI elements are present
+
+        // Verify main UI elements are present on launch
         let navigationBar = app.navigationBars["Recipes"]
-        let app = XCUIApplication()
-        app.activate()
-        XCUIDevice.shared.press(.home)
-        
-        let springboardApp = XCUIApplication(bundleIdentifier: "com.apple.springboard")
-        let element = springboardApp/*@START_MENU_TOKEN@*/.images["record.circle"]/*[[".otherElements",".images[\"Screen Recording\"]",".images[\"record.circle\"]",".images"],[[[-1,2],[-1,1],[-1,3],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.firstMatch
-        element.tap()
-        element.tap()
         XCTAssertTrue(navigationBar.waitForExistence(timeout: 3.0), "Navigation bar should appear on launch")
     }
     
